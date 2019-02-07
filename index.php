@@ -24,6 +24,8 @@
                         <th>Piano</th>
                         <th>N Letti</th>
                         <th>Visualizza</th>
+                        <th>Aggiorna</th>
+                        <th>Cancella</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,6 +41,23 @@
                                 <a href="http://localhost/Boolean/php-crud/show/show.php?id=<?php echo $room['id']; ?>" class="btn btn-primary">
                                     VAI
                                 </a>
+                            </td>
+                            <td>
+                                <a href="http://localhost/Boolean/php-crud/update/form.php?id=<?php echo $room['id']; ?>" class="btn btn-success">
+                                    Aggiorna
+                                </a>
+                            </td>
+                            <td>
+                                <?php /* ?>
+                                <a href="http://localhost/Boolean/php-crud/delete/server.php?id=<?php echo $room['id']; ?>" class="btn btn-danger">
+                                    Cancella
+                                </a>
+                                */ ?>
+
+                                <form action="http://localhost/Boolean/php-crud/delete/server.php" method="post">
+                                    <input type="hidden" name="id" value="<?php echo $room['id']; ?>">
+                                    <input type="submit" class="btn btn-danger" value="Cancella">
+                                </form>
                             </td>
                         </tr>
                     <?php } ?>

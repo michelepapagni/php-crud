@@ -20,7 +20,9 @@
         {
             $room = $result->fetch_assoc();
         }
-        
+
+        $conn->close();
+
         return $room;
     }
 
