@@ -22,7 +22,7 @@
 
     $result = $conn->query($sql);
 
-    if ($result)
+    if ($result == true)
     {
         echo 'OK';
     }

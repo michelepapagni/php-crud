@@ -23,8 +23,7 @@
                         <th>N Stanza</th>
                         <th>Piano</th>
                         <th>N Letti</th>
-                        <th>Creata il</th>
-                        <th>Aggiornata il</th>
+                        <th>Visualizza</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,8 +35,11 @@
                             <td><?php echo $room['room_number']; ?></td>
                             <td><?php echo $room['floor']; ?></td>
                             <td><?php echo $room['beds']; ?></td>
-                            <td><?php echo $room['created_at']; ?></td>
-                            <td><?php echo $room['updated_at']; ?></td>
+                            <td>
+                                <a href="http://localhost/Boolean/php-crud/show/show.php?id=<?php echo $room['id']; ?>" class="btn btn-primary">
+                                    VAI
+                                </a>
+                            </td>
                         </tr>
                     <?php } ?>
                 </tbody>

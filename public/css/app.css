@@ -10536,3 +10536,8 @@ table {
   color: #565a5c;
 }
 
+.card {
+  width: 18rem;
+  margin-top: 40px;
+}
+
