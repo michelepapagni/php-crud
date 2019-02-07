@@ -9,6 +9,13 @@
     </div>
     <div class="row">
         <div class="col-12">
+            <a href="http://localhost/Boolean/php-crud/create/form.php" class="btn btn-primary">
+                Crea nuova stanza
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
             <table class="table">
                 <thead>
                     <tr>

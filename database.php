@@ -1,9 +1,6 @@
 <?php
 
-    $servername = 'localhost';
-    $username = 'root';
-    $password = 'Mike2807';
-    $dbname = 'hotel_booleana';
+    include 'env.php';
 
     $conn = new Mysqli($servername, $username, $password, $dbname);
 
